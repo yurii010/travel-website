@@ -1,0 +1,240 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    color: white;
+    line-height: normal;
+    font-style: normal;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-overflow-scrolling: touch;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Nav */
+
+.nav-item,
+.nav-item a,
+.navbar-nav .nav-item a.active,
+.navbar-nav .nav-item a:hover {
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: transform 0.1s ease-in;
+}
+
+/* Header */
+
+.header {
+    min-height: 800px;
+    background-image: url('../img/bg-nav.png');
+    background-size: cover;
+    box-shadow: inset 0 150px 100px -100px rgba(0, 0, 0, 1);
+}
+
+.header-content {
+    flex: 1;
+    padding-top: 200px;
+}
+
+.header-content_title {
+    text-align: center;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.header-content_text {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.header-button {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #00A651;
+    transition: transform 0.1s ease-in;
+}
+
+.header-button:hover,
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+.box-shadow {
+    min-height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #F9F9F9 100%);
+}
+
+/* Main */
+
+.main {
+    color: black;
+}
+
+/* Service */
+
+.service-block {
+    padding: 50px 0px;
+}
+
+.plan-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 95px;
+    padding: 0px;
+}
+
+.plan-list_item {
+    border-radius: 15px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+    padding: 0px 30px;
+}
+
+.plan-list_item-second {
+    border-radius: 15px;
+    background-color: #F9F9F9;
+    padding: 0px 30px;
+}
+
+.plan-item_width {
+    width: 370px;
+}
+
+.plan-list_item-icon {
+    padding: 30px 0px;
+    width: 30px;
+}
+
+.plan-item_title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.plan-item_text {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.main-title {
+    padding: 40px 0px 30px 0px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Merits */
+
+.merits-container {
+    min-height: 500px;
+    background-color: rgba(0, 88, 83, 0.05);
+}
+
+.merits-content {
+    background-image: url("../img/world-map-one.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px;
+}
+
+.merits-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.merits-text {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.merits-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 100px;
+    padding: 0px;
+}
+
+.merits-item_title {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.merits-items {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.merits-item_text {
+    text-align: center;
+}
+
+.merits-list_item-icon {
+    width: 36px;
+}
+
+/* Distinations */
+
+.distination-container {
+    padding: 30px 0px;
+}
+
+.distinations-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.distination-item {
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+.distination-item_text {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.map-box{
+    position: relative;
+}
+
+.world-map-two{
+    width: 100%;
+}
+
+.navigation-icon {
+    height: 33px;
+    padding-right: 15px;
+}
