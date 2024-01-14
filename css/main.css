@@ -212,7 +212,7 @@ li {
 }
 
 .distination-item {
-    min-width: 500px;
+    width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -543,7 +543,13 @@ footer {
     }
 }
 
-@media(max-width:950px) {
+@media(max-width:992px) {
+    .header-content{
+        padding-top: 100px;
+    }
+    .header-content_title{
+        font-size: 45px;
+    }
     .about-us-response {
         width: 800px;
     }
@@ -624,14 +630,48 @@ footer {
     }
 }
 
-@media(max-width:460px) {
+@media(max-width:650px){
+    .plan-item_width {
+        width: 270px;
+    }
+}
+
+@media(max-width:550px){
+    .header-content_title {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:530px) {
+    .button-list {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+    .email-title{
+        font-size: 20px;
+    }
     .about-us-response {
-        width: 400px;
+        width: 300px;
+    }
+    .trip-list_img, .trip-list_item{
+        width: 300px;
+    }
+    .trip-image{
+        width: 350px;
+    }
+    .merits-title{
+        font-size: 20px;
     }
 }
 
 @media(max-width:450px) {
     .about-us-response {
-        width: 400px;
+        width: 300px;
+    }
+    .form-control{
+        width: 350px;
+    }
+    .steps-list{
+        padding-left: 0px;
     }
 }
