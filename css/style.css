@@ -1,0 +1,46 @@
+.form-container {
+    background-color: #32cd32; /* зелений колір, наприклад, колір природи */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #008080; /* темно-блакитний колір, наприклад, барво приголомшливого океану */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #008080;
+    border-radius: 5px;
+}
+
+.form-group a {
+    color: #008080;
+    text-decoration: none;
+}
+
+.form-group button {
+    background-color: #008080;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.black{
+    color: black;
+}
