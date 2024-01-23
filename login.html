@@ -16,8 +16,8 @@
     <header class="default-page-color position-relative">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent p-3 px-lg-5 shadow-sm">
             <div class="container-fluid d-flex align-items-center">
-                <a class="navbar-brand" href="./index.html"><img src="./img/travel-logo.png" alt="Travel Goo" class="img-fluid"
-                        width="60px"></a>
+                <a class="navbar-brand" href="./index.html"><img src="./img/travel-logo.png" alt="Travel Goo"
+                        class="img-fluid" width="60px"></a>
                 <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -181,7 +181,9 @@
                     })
                 })
                 .catch((error) => {
-                    alert(error.message);
+                    if (error.code === 'auth/invalid-credential') {
+                        alert('Invalid email or password.');
+                    }
                     console.log(error.code);
                     console.log(error.message);
                 })
@@ -195,6 +197,6 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
         defer></script>
-    </body>
+</body>
 
 </html>

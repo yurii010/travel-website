@@ -182,14 +182,19 @@
                         firstname: firstname.value,
                         lastname: lastname.value
                     });
-                    email.value = "";
-                    firstname.value = "";
-                    lastname.value = "";
-                    password.value = "";
+                    window.location.href = "login.html";
                     alert('Successfully registration!!!');
                 })
                 .catch((error) => {
-                    alert(error.message);
+                    if (error.code === 'auth/invalid-email') {
+                        alert('Invalid email address.');
+                    }
+                    if (error.code === 'auth/weak-password') {
+                        alert('Password should be at least 6 characters!');
+                    }
+                    if (error.code === 'auth/email-already-in-use') {
+                        alert('This email is already in use. Please use a different email address.');
+                    }
                     console.log(error.code);
                     console.log(error.message);
                 })

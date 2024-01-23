@@ -16,8 +16,8 @@
     <header class="default-page-color position-relative">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent p-3 px-lg-5 shadow-sm">
             <div class="container-fluid d-flex align-items-center">
-                <a class="navbar-brand" href="./index.html"><img src="./img/travel-logo.png" alt="Travel Goo" class="img-fluid"
-                        width="60px"></a>
+                <a class="navbar-brand" href="./index.html"><img src="./img/travel-logo.png" alt="Travel Goo"
+                        class="img-fluid" width="60px"></a>
                 <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -35,7 +35,10 @@
                             <a class="nav-link mx-lg-4" href="#">Packages</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ms-auto flex-row gap-2">
+                    <ul class="navbar-nav d-flex align-items-center ms-auto flex-row gap-2">
+                        <li class="nav-item">
+                            <button type="button" id="signoutbutton">Sign Out</button>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><img src="./img/icons/favorite-icon.png" alt="favorite"
                                     class="img-fluid" width="30px"></a>
@@ -54,12 +57,9 @@
         <div class="container-fluid px-lg-5 login-form d-flex justify-content-center p-4">
             <form id="form">
                 <div class="form-group c-black">
-                    <p class="black" id="message"></p>
                     <p class="black" id="greet"></p>
                 </div>
-                <div class="form-group">
-                    <button type="button" id="signoutbutton">Sign Out</button>
-                </div>
+
             </form>
         </div>
     </main>
@@ -135,7 +135,6 @@
         let userCreds = JSON.parse(sessionStorage.getItem("user-creds"));
         let userInfo = JSON.parse(sessionStorage.getItem("user-info"));
 
-        let message = document.getElementById('message');
         let greet = document.getElementById('greet');
         let signOutButton = document.getElementById('signoutbutton');
 
@@ -149,7 +148,6 @@
             if (!sessionStorage.getItem("user-creds"))
                 window.location.href = 'login.html';
             else {
-                message.innerText = `User with email ${userCreds.email} logged in`;
                 greet.innerText = `Welcome ${userInfo.firstname + " " + userInfo.lastname}!`;
             }
         }

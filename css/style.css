@@ -1,5 +1,4 @@
 .form-container {
-    background-color: #32cd32; /* зелений колір, наприклад, колір природи */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -8,7 +7,7 @@
 }
 
 .form-container h2 {
-    color: #008080; /* темно-блакитний колір, наприклад, барво приголомшливого океану */
+    color: black;
 }
 
 .form-group {
@@ -16,6 +15,7 @@
 }
 
 .form-group label {
+    color: black;
     display: block;
     margin-bottom: 5px;
 }
@@ -23,24 +23,32 @@
 .form-group input {
     width: 100%;
     padding: 8px;
-    border: 1px solid #008080;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
 .form-group a {
-    color: #008080;
+    color: black;
     text-decoration: none;
 }
 
 .form-group button {
-    background-color: #008080;
+    background-color: #00A651;
     color: #fff;
     padding: 10px;
     border: none;
+    width: 100px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .black{
     color: black;
+}
+
+#signoutbutton{
+    border: none;
+    background-color: #171717;
+    color: white;
+    font-weight: 600;
 }
